@@ -1,0 +1,229 @@
+
+body{
+    background-color: black;
+    font-family: 'Inter', sans-serif;
+}
+
+/*-----titulo secciones------*/
+.tituloRojo{
+    color: rgb(229, 55, 49);
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/*-----menu------*/
+header{
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    background-color:black; 
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
+    width: 100%;
+}
+
+h1{
+    font-size: 60px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: red;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menuNav ul {
+    list-style: none;
+    display: flex;
+}
+  
+.menuNav ul li {
+    margin-left: 20px; 
+}
+  
+.menuNav ul li a {
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+  
+.menuNav ul li a:hover {
+    color: #85112F; 
+    transform: scale(2.2); 
+}
+
+/*-----peliculas-----*/
+#peliculas{
+    padding: 20px;
+    text-align: center;
+
+}
+
+.contenedor-peliculas{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pelicula {
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(33.33% - 200px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pelicula:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.pelicula img{
+    width: 200px;
+}
+
+.pelicula h3{
+    color: white;
+    margin: 0px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+/*----actores----*/
+#actores{   
+    padding: 20px;
+}
+
+.contenedor-actores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.actor{
+    text-align: center;
+}
+
+.actor img{
+    border-radius:120px;
+    border:5px solid #666;
+    width:150px;
+    height:150px;
+}
+
+.actor h3{
+    color: white;
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.actor h5{
+    color: white;
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.actor p{
+    color: white;
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+/*----series-----*/
+#series{
+    padding: 20px;
+    text-align: center;
+}
+
+.contenedor-series{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.serie{
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(33.33% - 200px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.serie:hover{
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.serie h3{
+    color: white;
+}
+
+.serie p{
+    color: white;
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.serie img{
+    width: 200px;
+}
+
+/*-----premios----*/
+#premios{
+  background-color: black;
+}
+
+/*----festivales----*/
+#festivales{
+   background-color: black;
+}
+
+.festival{
+    color: white;
+}
+
+/*----lo mas visto----*/
+#loMasVisto{
+    background-color: black;
+}
+
+.top{
+    color: white;
+}
+
+.item img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+}
+
+.item span{
+    color: white;
+}
+
+/*----footer----*/
+#footer{
+    background-color: black;
+}
+
+.redes-sociales{
+    align-items: flex-start;
+}
+
+.footer-info{
+    justify-content: flex-end;
+    color: white;
+}
